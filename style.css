@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +8,10 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.col-sm-12-modif{
+    border: 1px solid black;
 }
 
 a,
@@ -81,6 +87,7 @@ a:hover {
     background: top no-repeat;
 }
 
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -134,7 +141,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -318,7 +325,7 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    /* margin-right: -16px; */
     float: right;
     z-index: 1;
 }
@@ -327,6 +334,8 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    display: flex;
+    text-decoration: none;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -656,7 +665,9 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-bloc-text {
@@ -819,9 +830,9 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+/* .bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
+} */
 
 /* .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
@@ -837,6 +848,37 @@ h4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/image-de-presentation.webp");
 }
 
+.text-center{
+    text-align: center;
+}
+
+.form-group{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 30rem;
+    margin-top: 0.5rem;
+}
+
+.bloc-button-modif{
+    margin-top: 0;
+}
+
+
+@media (min-width:900px){
+    .row-modif{
+        display: flex;
+    }
+    .col-sm-6-modif{
+        margin-left: 3rem;
+        /* font-size: 1.2rem; */
+}
+}
+
+/* .col-sm-6-modif{
+    margin-left: 1rem;
+} */
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1053,3 +1095,4 @@ h4 {
         text-align: center;
     }
 }
+
